@@ -1,9 +1,9 @@
 package entladung;
 
-import java.util.Vector;
+import java.util.LinkedList;
 
 public class DoppelendFaehre
 {
 	int id;
-	Fahrzeug[] fahrzeuge = new Fahrzeug[1000]; 
+	public static LinkedList<Fahrzeug> fahrzeuge = new LinkedList<Fahrzeug>();
 }

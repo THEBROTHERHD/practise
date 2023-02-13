@@ -1,9 +1,9 @@
 package entladung;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class EinendFaehre
 {
 	int id;
-	Fahrzeug[] fahrzeuge = new Fahrzeug[1000];
+	public ArrayList<Fahrzeug> fahrzeuge = new ArrayList<Fahrzeug>();
 }

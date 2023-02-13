@@ -3,18 +3,18 @@ public class FahreTest {
 
 	public static void main(String[] args) 
 	{
-//		EinendFaehre einendFaehre = new EinendFaehre();
-//		for (int i = 0; i < 1000; ++i)
-//		{
-//			einendFaehre.fahrzeuge[i] = new Fahrzeug(i, 1000);
-//		}
-//		
-//		for (int i = 0; i < einendFaehre.fahrzeuge.length; ++i)
-//		{
-//			Fahrzeug entladung = einendFaehre.fahrzeuge[i];
-//			System.out.println(entladung.id);
-//			einendFaehre.fahrzeuge[i] = null;
-//		}
+		EinendFaehre einendFaehre = new EinendFaehre();
+		for (int i = 0; i < 10; ++i)
+		{
+			einendFaehre.fahrzeuge.add(new Fahrzeug(i, 1000));
+		}
+
+		for (int i = 0; i < einendFaehre.fahrzeuge.length; ++i)
+		{
+			Fahrzeug entladung = einendFaehre.fahrzeuge[i];
+			System.out.println(entladung.id);
+			einendFaehre.fahrzeuge[i] = null;
+		}
 		
 		DoppelendFaehre doppelendFaehre = new DoppelendFaehre();
 		for (int i = 0; i < doppelendFaehre.fahrzeuge.length; ++i)
